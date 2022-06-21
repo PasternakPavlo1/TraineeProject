@@ -1,0 +1,10 @@
+included:
+  - Template_project_MVP
+
+excluded:
+  - Pods
+  
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
+  - force_try
