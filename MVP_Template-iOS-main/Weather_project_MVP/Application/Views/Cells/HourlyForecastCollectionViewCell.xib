@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HourlyForecastCollectionViewCell" customModule="Weather_project_MVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUG-VT-Olx">
+                        <rect key="frame" x="18" y="84" width="34" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="cag-qI-WED"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-MG-oXI">
+                        <rect key="frame" x="18" y="43" width="34" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="oeW-Kb-pvF"/>
+                            <constraint firstAttribute="height" constant="30" id="tFO-Pb-APM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSH-yg-dZf">
+                        <rect key="frame" x="14" y="10" width="42" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7Xb-Eo-RVR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uUG-VT-Olx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="42f-g4-lGd"/>
+                <constraint firstItem="XSH-yg-dZf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="4Jc-iE-GGx"/>
+                <constraint firstItem="XSH-yg-dZf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="9eC-hr-WVb"/>
+                <constraint firstAttribute="bottom" secondItem="uUG-VT-Olx" secondAttribute="bottom" constant="10" id="GzR-yC-boG"/>
+                <constraint firstItem="0kk-MG-oXI" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="S0G-DR-JcM"/>
+                <constraint firstAttribute="trailing" secondItem="XSH-yg-dZf" secondAttribute="trailing" constant="14" id="aF8-S6-FSI"/>
+                <constraint firstAttribute="trailing" secondItem="uUG-VT-Olx" secondAttribute="trailing" constant="18" id="n22-8U-P05"/>
+                <constraint firstItem="0kk-MG-oXI" firstAttribute="top" secondItem="XSH-yg-dZf" secondAttribute="bottom" constant="13" id="yv2-d8-qbg"/>
+                <constraint firstItem="uUG-VT-Olx" firstAttribute="top" secondItem="0kk-MG-oXI" secondAttribute="bottom" constant="11" id="zid-pW-1jz"/>
+                <constraint firstItem="0kk-MG-oXI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="zmJ-LK-Zvz"/>
+            </constraints>
+            <size key="customSize" width="316" height="50"/>
+            <connections>
+                <outlet property="degreeLabel" destination="uUG-VT-Olx" id="YwY-GN-mMc"/>
+                <outlet property="hourLabel" destination="XSH-yg-dZf" id="B4Z-3n-DoY"/>
+                <outlet property="weatherImage" destination="0kk-MG-oXI" id="t7T-gw-xvc"/>
+            </connections>
+            <point key="canvasLocation" x="152.17391304347828" y="56.25"/>
+        </collectionViewCell>
+    </objects>
+</document>

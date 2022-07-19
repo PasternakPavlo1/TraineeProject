@@ -1,5 +1,5 @@
 included:
-  - Template_project_MVP
+  - Weather_project_MVP
 
 excluded:
   - Pods
