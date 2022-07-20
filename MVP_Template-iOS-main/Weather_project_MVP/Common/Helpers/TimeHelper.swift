@@ -13,6 +13,7 @@ enum TimeFormat: String {
     case hour = "HH"
 }
 
+// MARK: - TimeHelper
 final class TimeHelper {
     
     class func getDateString(by timestampeDate: Int, with format: TimeFormat) -> String {
